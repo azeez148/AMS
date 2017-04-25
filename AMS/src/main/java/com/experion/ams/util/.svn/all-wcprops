@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/ams/!svn/ver/328/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/util
+END
+DepreciationCalculationsJson.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/ams/!svn/ver/169/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/util/DepreciationCalculationsJson.java
+END
+BookManagementUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/ams/!svn/ver/5/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/util/BookManagementUtil.java
+END
+AMSUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/ams/!svn/ver/328/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/util/AMSUtil.java
+END
+BookManagementConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/ams/!svn/ver/5/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/util/BookManagementConstants.java
+END
+AssetVerificationJson.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/ams/!svn/ver/202/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/util/AssetVerificationJson.java
+END

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+	<!-- ******************************************************************* -->
+	<!--*************************** Layouts ******************************** -->
+	<!-- ******************************************************************* -->
+
+	<!--*********************** empty layout ******************************** -->
+	<definition name="emptyLayout" template="/views/layout/emptyLayout.jsp">
+		<put-attribute name="mainBody" value="/views/common/none.jsp" />
+	</definition>
+
+	<!--*********************** login layout ******************************** -->
+	<definition name="doc.loginLayout" template="/views/layout/LoginLayout.jsp">
+		<put-attribute name="header" value="/views/common/Header.jsp" />
+		<put-attribute name="mainBody" value="/views/common/none.jsp" />
+		<put-attribute name="title" value="Asset Management System" />
+	</definition>
+
+	<!--*********************** Main layout ******************************** -->
+	<definition name="doc.mainLayout" template="/views/layout/MainLayout.jsp">
+		<put-attribute name="hasWelcome" value="Y" />
+		<put-attribute name="header" value="/views/common/Header.jsp" />
+		<put-attribute name="menu" value="/views/common/Menu.jsp" />
+		<put-attribute name="mainBody" value="/views/common/none.jsp" />
+		<put-attribute name="footer" value="/views/common/Footer.jsp" />
+		<put-attribute name="title" value="Asset Management System" />
+	</definition>
+
+
+	<!--*********************** layout defs ******************************** -->
+
+
+	<definition name="doc.homeLayout" extends="doc.mainLayout">
+		<put-attribute name="menu" value="/views/common/Menu.jsp" />
+	</definition>
+
+	<!-- ******************************************************************* -->
+	<!-- ********************** public pages ******************************* -->
+	<!-- ******************************************************************* -->
+
+	<!--*********************** wildcard pages ****************************** -->
+
+	<!-- homepage -->
+	<definition name="/home" extends="doc.mainLayout">
+		<put-attribute name="mainBody" value="/views/home.jsp" />
+	</definition>
+
+
+	<!-- Employeepage -->
+	<definition name="/employee" extends="doc.mainLayout">
+		<put-attribute name="mainBody" value="/views/employee.jsp" />
+	</definition>
+
+	<!-- Manager Inbox -->
+	<definition name="/managerinbox" extends="doc.mainLayout">
+		<put-attribute name="mainBody" value="/views/managerinbox.jsp" />
+	</definition>
+
+	<!-- Approve Asset -->
+	<definition name="/assetapprove" extends="doc.mainLayout">
+		<put-attribute name="mainBody" value="/views/assetapprove.jsp" />
+	</definition>
+
+	<!-- write revalue -->
+	<definition name="/writerevalue" extends="doc.mainLayout">
+		<put-attribute name="mainBody" value="/views/writerevalue.jsp" />
+	</definition>
+
+	<!-- testpage -->
+	<definition name="/test" extends="doc.mainLayout">
+		<put-attribute name="mainBody" value="/views/test.jsp" />
+	</definition>
+
+
+	<!-- SystemParameter -->
+	<definition name="/systemparameter" extends="doc.mainLayout">
+		<put-attribute name="mainBody" value="/views/systemparameter.jsp" />
+	</definition>
+
+	<!-- Replication -->
+	<definition name="/replicationpage" extends="doc.homeLayout">
+		<put-attribute name="mainBody" value="/views/AMS_Replication.jsp" />
+	</definition>
+
+	<!-- Role Management -->
+	<definition name="/rolemanagement" extends="doc.homeLayout">
+		<put-attribute name="mainBody" value="/views/rolemanagement.jsp" />
+	</definition>
+
+	<!-- Purchase Info -->
+	<definition name="/purchaseInfo" extends="doc.homeLayout">
+		<put-attribute name="mainBody" value="/views/purchaseInfo.jsp" />
+	</definition>
+
+	<!-- Transfer History -->
+	<definition name="/transferHistory" extends="doc.homeLayout">
+		<put-attribute name="mainBody" value="/views/transferHist.jsp" />
+	</definition>
+
+	<!-- Service_info -->
+	<definition name="/AMS_ServiceInfo" extends="doc.mainLayout">
+		<put-attribute name="mainBody" value="/views/AMS_ServiceInfo.jsp" />
+		<put-attribute name="menuBody" value="/views/common/none.jsp" />
+	</definition>
+
+	<!-- Group -->
+	<definition name="/groupmaster" extends="doc.homeLayout">
+		<put-attribute name="mainBody" value="/views/mastergroup.jsp" />
+	</definition>
+
+	<!-- service Info History -->
+	<definition name="/serviceinfohistory" extends="doc.homeLayout">
+		<put-attribute name="mainBody" value="/views/serviceinfohistory.jsp" />
+	</definition>
+
+
+	<!-- AssetDepreciation -->
+	<definition name="/assetdepreciation" extends="doc.mainLayout">
+		<put-attribute name="mainBody" value="/views/assetdepreciation.jsp" />
+	</definition>
+
+	<!-- Asset -->
+	<definition name="/asset" extends="doc.mainLayout">
+		<put-attribute name="mainBody" value="/views/asset.jsp" />
+	</definition>
+
+	<!-- Asset Transfer -->
+	<definition name="/assetTransfer" extends="doc.mainLayout">
+		<put-attribute name="mainBody" value="/views/assettransfer.jsp" />
+	</definition>
+
+	<!-- Physical Verification -->
+	<definition name="/physicalverification" extends="doc.mainLayout">
+		<put-attribute name="mainBody" value="/views/physicalverification.jsp" />
+	</definition>
+
+
+	<!-- Login -->
+	<definition name="/login" extends="doc.mainLayout">
+		<put-attribute name="mainBody" value="/views/login.jsp" />
+		<put-attribute name="header" value="/views/common/none.jsp" />
+		<put-attribute name="menu" value="/views/common/none.jsp" />
+		<put-attribute name="footer" value="/views/common/none.jsp" />
+	</definition>
+
+
+</tiles-definitions>
+
+
+
+

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/ams/!svn/ver/329/trunk/source/AssetManagementSystem/src/main/resources
+END
+db.properties
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/ams/!svn/ver/5/trunk/source/AssetManagementSystem/src/main/resources/db.properties
+END
+log4j.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/ams/!svn/ver/5/trunk/source/AssetManagementSystem/src/main/resources/log4j.xml
+END
+displaytag.properties
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/ams/!svn/ver/5/trunk/source/AssetManagementSystem/src/main/resources/displaytag.properties
+END

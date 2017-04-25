@@ -1,0 +1,20 @@
+<Context path="/AssetManagementSystem" reloadable="true" docBase="/AssetManagementSystem">
+
+   <Environment description="Prod or test Environment" name="jndi/environment"
+		override="false" type="java.lang.String" value="test" />
+		
+	<Resource 
+		name="jdbc/AMSDB" 
+		auth="Container"  
+        type="javax.sql.DataSource"  
+        driverClassName="com.mysql.jdbc.Driver"  
+		maxActive="10000" 
+		maxIdle="30" 
+		maxWait="1000"
+		username="root" 
+		password="root"
+		url="jdbc:mysql://localhost:3306/ams?zeroDateTimeBehavior=convertToNull"/>
+
+</Context>
+<!-- driverClassName="net.sourceforge.jtds.jdbc.Driver" -->
+<!-- driverClassName="oracle.jdbc.driver.OracleDriver"-->

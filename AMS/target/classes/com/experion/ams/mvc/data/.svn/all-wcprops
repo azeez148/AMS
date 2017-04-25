@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/ams/!svn/ver/306/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/mvc/data
+END
+ReplicationForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/ams/!svn/ver/206/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/mvc/data/ReplicationForm.java
+END
+AssetTransferForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/ams/!svn/ver/189/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/mvc/data/AssetTransferForm.java
+END
+LoginForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/ams/!svn/ver/6/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/mvc/data/LoginForm.java
+END
+RoleForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/ams/!svn/ver/108/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/mvc/data/RoleForm.java
+END
+AssetListData.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/ams/!svn/ver/114/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/mvc/data/AssetListData.java
+END
+ServiceInfoForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/ams/!svn/ver/146/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/mvc/data/ServiceInfoForm.java
+END
+GroupMasterForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/ams/!svn/ver/146/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/mvc/data/GroupMasterForm.java
+END
+AssetForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/ams/!svn/ver/306/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/mvc/data/AssetForm.java
+END
+AssetApproveForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/ams/!svn/ver/178/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/mvc/data/AssetApproveForm.java
+END

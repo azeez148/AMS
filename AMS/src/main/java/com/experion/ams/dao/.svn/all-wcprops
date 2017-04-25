@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/ams/!svn/ver/328/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/dao
+END
+MasterDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/ams/!svn/ver/146/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/dao/MasterDAO.java
+END
+ServiceInfoDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/ams/!svn/ver/146/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/dao/ServiceInfoDAO.java
+END
+AmsDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/ams/!svn/ver/328/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/dao/AmsDAO.java
+END
+LoginDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/ams/!svn/ver/6/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/dao/LoginDAO.java
+END
+BookManagementDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/ams/!svn/ver/38/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/dao/BookManagementDAO.java
+END
+ReplicationDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/ams/!svn/ver/219/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/dao/ReplicationDAO.java
+END
+TransferHistDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/ams/!svn/ver/129/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/dao/TransferHistDAO.java
+END
+AssetDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/ams/!svn/ver/321/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/dao/AssetDAO.java
+END
+BaseDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/ams/!svn/ver/5/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/dao/BaseDAO.java
+END
+PhysicalVerificationDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/ams/!svn/ver/193/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/dao/PhysicalVerificationDAO.java
+END
+DashboardDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/ams/!svn/ver/53/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/dao/DashboardDao.java
+END
+RoleDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/ams/!svn/ver/303/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/dao/RoleDAO.java
+END
+AmsPurchaseInfoDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/ams/!svn/ver/264/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/dao/AmsPurchaseInfoDAO.java
+END
+AmsServiceInfoHistoryDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/ams/!svn/ver/286/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/dao/AmsServiceInfoHistoryDAO.java
+END
+ManagerInboxDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/ams/!svn/ver/177/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/dao/ManagerInboxDAO.java
+END
+SystemParameterDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/ams/!svn/ver/150/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/dao/SystemParameterDAO.java
+END
+AssetTransferDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/ams/!svn/ver/291/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/dao/AssetTransferDAO.java
+END
+AssetDepreciationDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/ams/!svn/ver/319/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/dao/AssetDepreciationDAO.java
+END

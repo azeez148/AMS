@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/ams/!svn/ver/330/trunk/source/AssetManagementSystem/src/main/webapp/views/common
+END
+taglibs.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/ams/!svn/ver/5/trunk/source/AssetManagementSystem/src/main/webapp/views/common/taglibs.jsp
+END
+none.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/ams/!svn/ver/5/trunk/source/AssetManagementSystem/src/main/webapp/views/common/none.jsp
+END
+Footer.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/ams/!svn/ver/16/trunk/source/AssetManagementSystem/src/main/webapp/views/common/Footer.jsp
+END
+Header.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/ams/!svn/ver/223/trunk/source/AssetManagementSystem/src/main/webapp/views/common/Header.jsp
+END
+Menu.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/ams/!svn/ver/331/trunk/source/AssetManagementSystem/src/main/webapp/views/common/Menu.jsp
+END

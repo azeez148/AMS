@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/ams/!svn/ver/328/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/entity
+END
+Asset.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/ams/!svn/ver/323/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/entity/Asset.java
+END
+EmployeeToRoleMapping.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/ams/!svn/ver/206/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/entity/EmployeeToRoleMapping.java
+END
+AssetGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/ams/!svn/ver/290/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/entity/AssetGroup.java
+END
+AssetWorkflow.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/ams/!svn/ver/219/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/entity/AssetWorkflow.java
+END
+PurchaseInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/ams/!svn/ver/266/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/entity/PurchaseInfo.java
+END
+Employee.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/ams/!svn/ver/328/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/entity/Employee.java
+END
+AssetRevalue.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/ams/!svn/ver/219/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/entity/AssetRevalue.java
+END
+Screen.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/ams/!svn/ver/13/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/entity/Screen.java
+END
+SystemParametersCodeMaster.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/ams/!svn/ver/198/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/entity/SystemParametersCodeMaster.java
+END
+ServiceInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/ams/!svn/ver/324/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/entity/ServiceInfo.java
+END
+AssetDisposal.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/ams/!svn/ver/219/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/entity/AssetDisposal.java
+END
+AssetGroupDepreciationMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/ams/!svn/ver/206/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/entity/AssetGroupDepreciationMap.java
+END
+AssetDepreciation.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/ams/!svn/ver/219/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/entity/AssetDepreciation.java
+END
+AssetTransfer.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/ams/!svn/ver/256/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/entity/AssetTransfer.java
+END
+Role.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/ams/!svn/ver/213/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/entity/Role.java
+END
+PhysicalVerification.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/ams/!svn/ver/219/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/entity/PhysicalVerification.java
+END
+RoleToScreenMapping.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/ams/!svn/ver/214/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/entity/RoleToScreenMapping.java
+END

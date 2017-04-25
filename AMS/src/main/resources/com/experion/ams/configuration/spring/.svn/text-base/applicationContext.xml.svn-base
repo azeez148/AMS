@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:task="http://www.springframework.org/schema/task" xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans   
+      http://www.springframework.org/schema/beans/spring-beans-3.0.xsd  
+      http://www.springframework.org/schema/context  
+      http://www.springframework.org/schema/context/spring-context-3.0.xsd  
+   http://www.springframework.org/schema/tx   
+   http://www.springframework.org/schema/tx/spring-tx-3.0.xsd  
+   http://www.springframework.org/schema/mvc   
+   http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+   http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+      	http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-3.0.xsd">
+
+	<context:annotation-config />
+
+	<context:component-scan base-package="com.experion.ams.mvc.controller" />
+	<!-- <context:component-scan base-package="com.experion.ams.mvc.controller" 
+		/> -->
+	<!-- <tx:annotation-driven/> -->
+	<mvc:annotation-driven />
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		<property name="configurationClass">
+			<value>org.hibernate.cfg.AnnotationConfiguration</value>
+		</property>
+		<property name="annotatedClasses">
+			<list>
+				<value>com.experion.ams.entity.Asset</value>
+				<value>com.experion.ams.entity.AssetDepreciation</value>
+				<value>com.experion.ams.entity.AssetDisposal</value>
+				<value>com.experion.ams.entity.AssetGroup</value>
+				<value>com.experion.ams.entity.AssetGroupDepreciationMap</value>
+				<value>com.experion.ams.entity.AssetRevalue</value>
+				<value>com.experion.ams.entity.AssetTransfer</value>
+				<value>com.experion.ams.entity.AssetWorkflow</value>
+				<value>com.experion.ams.entity.Employee</value>
+				<value>com.experion.ams.entity.EmployeeToRoleMapping</value>
+				<value>com.experion.ams.entity.PhysicalVerification</value>
+				<value>com.experion.ams.entity.PurchaseInfo</value>
+				<value>com.experion.ams.entity.Role</value>
+				<value>com.experion.ams.entity.RoleToScreenMapping</value>
+				<value>com.experion.ams.entity.Screen</value>
+				<value>com.experion.ams.entity.ServiceInfo</value>
+				<value>com.experion.ams.entity.SystemParametersCodeMaster</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.cglib.use_reflection_optimizer">false</prop>
+			</props>
+		</property>
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+	</bean>
+	
+	<!-- JNDI objects -->
+	<bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+	<!-- Use this JNDI lookup for TOMCAT. -->
+	<property name="jndiName"> <value>java:comp/env/jdbc/AMSDB</value> 
+		</property> </bean>
+
+	<bean id="messageSource"
+		class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+		<property name="basename" value="/resources/Messages" />
+	</bean>
+
+	<bean
+		class="org.springframework.beans.factory.config.MethodInvokingFactoryBean"
+		id="log4jInitialization">
+		<property name="targetClass" value="org.springframework.util.Log4jConfigurer" />
+		<property name="targetMethod" value="initLogging" />
+		<property name="arguments">
+			<list>
+				<value>classpath:log4j.xml</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean class="org.springframework.orm.hibernate3.HibernateTransactionManager"
+		id="hibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+
+	<!-- Services -->
+	<!-- <bean id="loginService" class="com.experion.ams.service.impl.LoginServiceImpl"> -->
+	<!-- <property name="loginDAO"> -->
+	<!-- <ref bean="loginDAO" /> -->
+	<!-- </property> -->
+	<!-- <property name="messageSource"> -->
+	<!-- <ref bean="messageSource" /> -->
+	<!-- </property> -->
+	<!-- </bean> -->
+
+
+	<!-- Services -->
+	<bean id="loginService" class="com.experion.ams.service.impl.LoginServiceImpl">
+		<!-- <property name="loginDAO"> <ref bean="loginDAO" /> </property> <property 
+			name="messageSource"> <ref bean="messageSource" /> </property> -->
+	</bean>
+
+	<!-- <bean id="loginDAO" class="com.experion.ams.dao.hibernate.LoginHibernateDAO"> 
+		<property name="sessionFactory"> <ref bean="sessionFactory" /> </property> 
+		<property name="messageSource"> <ref bean="messageSource" /> </property> 
+		</bean> -->
+
+	<bean id="amsservice" class="com.experion.ams.service.impl.AmsServiceImpl">
+		<property name="amsDAO">
+			<ref bean="amsDAO" />
+		</property>
+		<property name="messageSource">
+			<ref bean="messageSource" />
+		</property>
+	</bean>
+
+	<bean id="amsPurchaseService"
+		class="com.experion.ams.service.impl.AmsPurchaseInfoServiceImpl">
+		<property name="purchaseDAO">
+			<ref bean="purchaseDAO" />
+		</property>
+		<property name="messageSource">
+			<ref bean="messageSource" />
+		</property>
+	</bean>
+	<bean id="systemparametersservice"
+		class="com.experion.ams.service.impl.SystemParameterServiceImpl">
+		<property name="sysstemparameterdao">
+			<ref bean="sysstemparameterdao" />
+		</property>
+		<property name="messageSource">
+			<ref bean="messageSource" />
+		</property>
+	</bean>
+	<bean id="dashboardService" class="com.experion.ams.service.impl.DashboardServiceImpl">
+		<property name="dashboardDao">
+			<ref bean="dashboardDao" />
+		</property>
+		<property name="messageSource">
+			<ref bean="messageSource" />
+		</property>
+	</bean>
+	<bean id="managerInboxService" class="com.experion.ams.service.impl.ManagerInboxServiceImpl">
+		<property name="managerInboxDAO">
+			<ref bean="managerInboxDAO" />
+		</property>
+		<property name="messageSource">
+			<ref bean="messageSource" />
+		</property>
+	</bean>
+	<bean id="replicationService" class="com.experion.ams.service.impl.ReplicationServiceImpl">
+		<property name="replicationDAO">
+			<ref bean="replicationDAO" />
+		</property>
+		<property name="messageSource">
+			<ref bean="messageSource" />
+		</property>
+	</bean>
+	<bean id="roleService" class="com.experion.ams.service.impl.RoleServiceImpl">
+		<property name="roleDAO">
+			<ref bean="roleDAO" />
+		</property>
+		<!-- <property name="messageSource"> -->
+		<!-- <ref bean="messageSource" /> -->
+		<!-- </property> -->
+	</bean>
+	<bean id="serviceinfoService" class="com.experion.ams.service.impl.ServiceInfoServiceImpl">
+		<property name="serviceinfoDAO">
+			<ref bean="serviceinfoDAO" />
+		</property>
+	</bean>
+	<bean id="transferHistService" class="com.experion.ams.service.impl.TransferHistServiceImpl">
+		<property name="transferHistDAO">
+			<ref bean="transferHistDAO" />
+		</property>
+	</bean>
+	<bean id="masterService" class="com.experion.ams.service.impl.MasterServiceImpl">
+		<property name="masterDAO">
+			<ref bean="masterDAO" />
+		</property>
+		<property name="messageSource">
+			<ref bean="messageSource" />
+		</property>
+	</bean>
+	<bean id="amsServiceHistoryService"
+		class="com.experion.ams.service.impl.AmsServiceInfoHistoryServiceImpl">
+		<property name="serviceInfoHistoryDAO">
+			<ref bean="serviceInfoHistoryDAO" />
+		</property>
+		<property name="messageSource">
+			<ref bean="messageSource" />
+		</property>
+	</bean>
+	<bean id="assetdepreciationservice"
+		class="com.experion.ams.service.impl.AssetDepreciationServiceImpl">
+		<property name="assetdepreciationdao">
+			<ref bean="assetdepreciationdao" />
+		</property>
+		<property name="messageSource">
+			<ref bean="messageSource" />
+		</property>
+	</bean>
+	<bean id="assetService" class="com.experion.ams.service.impl.AssetServiceImpl">
+		<property name="assetDAO">
+			<ref bean="assetDAO" />
+		</property>
+		<!-- <property name="messageSource"> -->
+		<!-- <ref bean="messageSource" /> -->
+		<!-- </property> -->
+	</bean>
+	<bean id="assetTransferService" class="com.experion.ams.service.impl.AssetTransferServiceImpl">
+		<property name="assetTransferDAO">
+			<ref bean="assetTransferDAO" />
+		</property>
+	</bean>
+	<bean id="physicalverificationservice"
+		class="com.experion.ams.service.impl.PhysicalVerificationServiceImpl">
+		<property name="physicalverificationdao">
+			<ref bean="physicalverificationdao" />
+		</property>
+		<property name="messageSource">
+			<ref bean="messageSource" />
+		</property>
+	</bean>
+
+	<!-- Dao -->
+	<bean id="amsDAO" class="com.experion.ams.dao.hibernate.AMSHibernateDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+		<property name="messageSource">
+			<ref bean="messageSource" />
+		</property>
+	</bean>
+	<bean id="sysstemparameterdao"
+		class="com.experion.ams.dao.hibernate.SystemParameterHibernateDao">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+		<property name="messageSource">
+			<ref bean="messageSource" />
+		</property>
+	</bean>
+	<bean id="dashboardDao" class="com.experion.ams.dao.hibernate.DashboardHibernateDao">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+		<property name="messageSource">
+			<ref bean="messageSource" />
+		</property>
+	</bean>
+	<bean id="managerInboxDAO" class="com.experion.ams.dao.hibernate.ManagerInboxHibernateDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+		<property name="messageSource">
+			<ref bean="messageSource" />
+		</property>
+	</bean>
+	<bean id="replicationDAO" class="com.experion.ams.dao.hibernate.ReplicationHibernateDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+		<!-- <property name="messageSource"> -->
+		<!-- <ref bean="messageSource" /> -->
+		<!-- </property> -->
+	</bean>
+	<bean id="roleDAO" class="com.experion.ams.dao.hibernate.RoleHibernateDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+		<!-- <property name="messageSource"> -->
+		<!-- <ref bean="messageSource" /> -->
+		<!-- </property> -->
+	</bean>
+	<bean id="purchaseDAO"
+		class="com.experion.ams.dao.hibernate.AmsPurchaseInfoHibernateDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+		<property name="messageSource">
+			<ref bean="messageSource" />
+		</property>
+	</bean>
+	<bean id="serviceinfoDAO" class="com.experion.ams.dao.hibernate.ServiceInfoHibernateDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+		<property name="messageSource">
+			<ref bean="messageSource" />
+		</property>
+	</bean>
+	<bean id="transferHistDAO" class="com.experion.ams.dao.hibernate.TransferHisHibernateDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="masterDAO" class="com.experion.ams.dao.hibernate.MasterHibernateDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+		<property name="messageSource">
+			<ref bean="messageSource" />
+		</property>
+	</bean>
+	<bean id="serviceInfoHistoryDAO"
+		class="com.experion.ams.dao.hibernate.AmsServiceInfoHistoryHibernateDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+		<property name="messageSource">
+			<ref bean="messageSource" />
+		</property>
+	</bean>
+	<bean id="assetdepreciationdao"
+		class="com.experion.ams.dao.hibernate.AssetDepreciationHibernateDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+		<property name="messageSource">
+			<ref bean="messageSource" />
+		</property>
+	</bean>
+	<bean id="assetDAO" class="com.experion.ams.dao.hibernate.AssetHibernateDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+		<!-- <property name="messageSource"> -->
+		<!-- <ref bean="messageSource" /> -->
+		<!-- </property> -->
+	</bean>
+	<bean id="assetTransferDAO"
+		class="com.experion.ams.dao.hibernate.AssetTransferHibernateDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="physicalverificationdao"
+		class="com.experion.ams.dao.hibernate.PhysicalVerificationHibernateDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+		<property name="messageSource">
+			<ref bean="messageSource" />
+		</property>
+	</bean>
+
+	<!-- Configure the multipart resolver -->
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+	</bean>
+
+	<!-- Scheduler -->
+	<task:annotation-driven />
+	<!-- <util:properties id="applicationProps" location="application.properties" />
+	<context:property-placeholder properties-ref="applicationProps" /> -->
+	<bean id="schedulerXmlConfig" class="com.experion.ams.mvc.controller.HomeController" />
+
+	<task:scheduled-tasks>
+		<task:scheduled ref="schedulerXmlConfig" method="getAllEmployeesPMO"
+			cron="0 0 12 ? * *"></task:scheduled>
+	</task:scheduled-tasks>
+	
+</beans>
+							

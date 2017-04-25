@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/ams/!svn/ver/328/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/service/impl
+END
+AmsServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/ams/!svn/ver/328/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/service/impl/AmsServiceImpl.java
+END
+LoginServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/ams/!svn/ver/15/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/service/impl/LoginServiceImpl.java
+END
+BookManagementServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/ams/!svn/ver/15/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/service/impl/BookManagementServiceImpl.java
+END
+ReplicationServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/ams/!svn/ver/219/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/service/impl/ReplicationServiceImpl.java
+END
+TransferHistServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/ams/!svn/ver/129/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/service/impl/TransferHistServiceImpl.java
+END
+AssetServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/ams/!svn/ver/326/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/service/impl/AssetServiceImpl.java
+END
+PhysicalVerificationServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/ams/!svn/ver/205/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/service/impl/PhysicalVerificationServiceImpl.java
+END
+DashboardServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/ams/!svn/ver/71/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/service/impl/DashboardServiceImpl.java
+END
+RoleServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/ams/!svn/ver/310/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/service/impl/RoleServiceImpl.java
+END
+AmsPurchaseInfoServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/ams/!svn/ver/263/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/service/impl/AmsPurchaseInfoServiceImpl.java
+END
+AmsServiceInfoHistoryServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/ams/!svn/ver/285/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/service/impl/AmsServiceInfoHistoryServiceImpl.java
+END
+ManagerInboxServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/ams/!svn/ver/177/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/service/impl/ManagerInboxServiceImpl.java
+END
+SystemParameterServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/ams/!svn/ver/155/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/service/impl/SystemParameterServiceImpl.java
+END
+AssetTransferServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/ams/!svn/ver/297/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/service/impl/AssetTransferServiceImpl.java
+END
+AssetDepreciationServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/ams/!svn/ver/319/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/service/impl/AssetDepreciationServiceImpl.java
+END
+MasterServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/ams/!svn/ver/146/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/service/impl/MasterServiceImpl.java
+END
+ServiceInfoServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/ams/!svn/ver/146/trunk/source/AssetManagementSystem/src/main/java/com/experion/ams/service/impl/ServiceInfoServiceImpl.java
+END

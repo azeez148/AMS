@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/ams/!svn/ver/118/trunk/source/AssetManagementSystem/src/main/webapp/META-INF
+END
+weblogic.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/ams/!svn/ver/5/trunk/source/AssetManagementSystem/src/main/webapp/META-INF/weblogic.xml
+END
+context.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/ams/!svn/ver/118/trunk/source/AssetManagementSystem/src/main/webapp/META-INF/context.xml
+END
+MANIFEST.MF
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/ams/!svn/ver/5/trunk/source/AssetManagementSystem/src/main/webapp/META-INF/MANIFEST.MF
+END

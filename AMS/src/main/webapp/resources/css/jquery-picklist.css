@@ -1,0 +1,59 @@
+.pickList_sourceListContainer,  .pickList_targetListContainer {
+float: left;
+margin: 0.25em;
+
+border-radius:5px;
+border:1px solid #CCC;
+    background-color: white;
+	/*overflow-y:auto;*/
+	
+
+}
+
+ .pickList_controlsContainer {
+float: left;
+margin: 0.25em;
+
+border-radius:5px;
+border:1px solid #ccc;
+    background-color: white;
+	/*overflow-y:auto;*/
+	
+
+}
+.pickList_controlsContainer {
+text-align: center;
+}
+.pickList_controlsContainer button {
+display: block;
+width: 100%;
+text-align: center;
+}
+.pickList_list {
+list-style-type: none;
+margin-top:0px;
+margin-left:10px;
+padding: 0;
+float: left;
+width:250px;
+height:200px;
+/*border: 1px inset #fff;-->*/
+overflow-y: auto;
+cursor: default;
+}
+.pickList_selectedListItem {
+background-color: #a3c8f5;
+}
+.pickList_listLabel {
+font-size: 0.9em;
+font-weight: bold;
+text-align: center;
+border:1px outset #ddd;
+border-radius:0px;
+height:27px;
+
+
+}
+.pickList_clear {
+clear: both;
+}

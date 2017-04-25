@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/ams/!svn/ver/330/trunk/source/AssetManagementSystem/src/main/webapp/views
+END
+login.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/ams/!svn/ver/223/trunk/source/AssetManagementSystem/src/main/webapp/views/login.jsp
+END
+AMS_ServiceInfo.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/ams/!svn/ver/331/trunk/source/AssetManagementSystem/src/main/webapp/views/AMS_ServiceInfo.jsp
+END
+bookmanagement.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/ams/!svn/ver/5/trunk/source/AssetManagementSystem/src/main/webapp/views/bookmanagement.jsp
+END
+transferHist.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/ams/!svn/ver/331/trunk/source/AssetManagementSystem/src/main/webapp/views/transferHist.jsp
+END
+employee.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/ams/!svn/ver/331/trunk/source/AssetManagementSystem/src/main/webapp/views/employee.jsp
+END
+purchaseInfo.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/ams/!svn/ver/331/trunk/source/AssetManagementSystem/src/main/webapp/views/purchaseInfo.jsp
+END
+asset.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/ams/!svn/ver/331/trunk/source/AssetManagementSystem/src/main/webapp/views/asset.jsp
+END
+serviceinfohistory.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/ams/!svn/ver/331/trunk/source/AssetManagementSystem/src/main/webapp/views/serviceinfohistory.jsp
+END
+test.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/ams/!svn/ver/16/trunk/source/AssetManagementSystem/src/main/webapp/views/test.jsp
+END
+physicalverification.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/ams/!svn/ver/331/trunk/source/AssetManagementSystem/src/main/webapp/views/physicalverification.jsp
+END
+AMS_Replication.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/ams/!svn/ver/331/trunk/source/AssetManagementSystem/src/main/webapp/views/AMS_Replication.jsp
+END
+managerinbox.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/ams/!svn/ver/331/trunk/source/AssetManagementSystem/src/main/webapp/views/managerinbox.jsp
+END
+rolemanagement.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/ams/!svn/ver/331/trunk/source/AssetManagementSystem/src/main/webapp/views/rolemanagement.jsp
+END
+systemparameter.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/ams/!svn/ver/331/trunk/source/AssetManagementSystem/src/main/webapp/views/systemparameter.jsp
+END
+assettransfer.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/ams/!svn/ver/331/trunk/source/AssetManagementSystem/src/main/webapp/views/assettransfer.jsp
+END
+assetapprove.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/ams/!svn/ver/331/trunk/source/AssetManagementSystem/src/main/webapp/views/assetapprove.jsp
+END
+mastergroup.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/ams/!svn/ver/331/trunk/source/AssetManagementSystem/src/main/webapp/views/mastergroup.jsp
+END
+assetdepreciation.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/ams/!svn/ver/331/trunk/source/AssetManagementSystem/src/main/webapp/views/assetdepreciation.jsp
+END
+home.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/ams/!svn/ver/298/trunk/source/AssetManagementSystem/src/main/webapp/views/home.jsp
+END
+writerevalue.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/ams/!svn/ver/331/trunk/source/AssetManagementSystem/src/main/webapp/views/writerevalue.jsp
+END

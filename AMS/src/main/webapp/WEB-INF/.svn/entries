@@ -1,0 +1,74 @@
+10
+
+dir
+330
+http://58.68.91.124/svn/ams/trunk/source/AssetManagementSystem/src/main/webapp/WEB-INF
+http://58.68.91.124/svn/ams
+
+
+
+2015-08-17T05:35:41.687500Z
+206
+libin.l
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+bb9573a3-b874-7241-8122-0f655a8aeff9
+
+spring
+dir
+
+tags
+dir
+
+tiles
+dir
+
+tld
+dir
+
+web.xml
+file
+
+
+
+
+2015-07-07T09:11:15.000000Z
+4ea423706f4679e8551897ba703042b8
+2015-07-02T10:23:08.296875Z
+5
+aneesh.chandran
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1458
+
